@@ -39,6 +39,7 @@ const IndexPage: React.FC<PageProps> = () => {
             as="h1"
             size="4xl"
             lineHeight={calc($lineHeight).multiply(4).toString()}
+            color={'#1A365D'}
           >
             <Highlight
               query="With Speed"
@@ -47,18 +48,24 @@ const IndexPage: React.FC<PageProps> = () => {
               Resilience Works
             </Highlight>
           </Heading>
-          <Text fontSize={["2xl","4xl"]} fontWeight={'bold'} >
+          <Text fontSize={["2xl","4xl"]} fontWeight={'bold'} color={'#4A5568'}>
             Empowering Your Business Through Unwavering Resilience.            
           </Text>
         </Flex>
       </Center>
+      <FloatingAnimation>
       <Center>
-        <FloatingAnimation>
-          <Image maxW={["100%","50%"]} marginLeft={['50px','250px']} src="/static/superherofox.png" />
-        </FloatingAnimation>
+          <Image maxW={["100%","50%"]} marginLeft={['50px','250px']} src="/superherofox-small.png" />
       </Center>
+      </FloatingAnimation>
       <Box>
+        <Center my={['20px','40px']}>
+          <Heading textAlign={'center'} as={'h2'} fontSize={['40px','48px']}  color={'#1A365D'}>How we enable <br/>your technology to thrive</Heading>
+        </Center>
+        <Center>
+        </Center>
         <Service />
+
       </Box>
     </Box>
   );
