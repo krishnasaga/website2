@@ -23,6 +23,7 @@ import {
 } from "@chakra-ui/react";
 import { css, keyframes } from '@emotion/react'
 import { FloatingAnimation } from "../../utils";
+import { LorenzAttractor } from "../ LorenzAttractor";
 const $lineHeight = "1rem";
 
 export const Service  = () => {

@@ -8,8 +8,8 @@ const floating = keyframes`
   100%   { transform: translate(0, -0px); }    
 `
 
-export const FloatingAnimation = ({children} : { children: ReactElement}) => {
-    return <Box  css={css`      
+export const FloatingAnimation = ({ children }: { children: ReactElement }) => {
+  return <Box css={css`      
   animation: ${floating};
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -19,3 +19,4 @@ export const FloatingAnimation = ({children} : { children: ReactElement}) => {
 `}>{children}</Box>;
 
 }
+

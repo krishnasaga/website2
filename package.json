@@ -22,10 +22,12 @@
     "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@types/three": "^0.163.0",
     "framer-motion": "^11.0.0",
     "gatsby": "^5.11.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "three": "^0.163.0"
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2.3.0",
