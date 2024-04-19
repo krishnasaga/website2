@@ -27,7 +27,7 @@ import { LorenzAttractor } from "../ LorenzAttractor";
 const $lineHeight = "1rem";
 
 export const Service  = () => {
-  const { toggleColorMode } = useColorMode();
+
   return (
     <Box as="section" px={['1rem','10rem']} mb={'10rem'}>
      <Grid templateColumns={['1fr','1fr 1fr']} gridTemplateAreas={`

@@ -23,6 +23,7 @@ import { css, keyframes } from '@emotion/react'
 import { Service } from '../Components/Service';
 import { FloatingAnimation } from "../utils";
 import { title } from "process";
+import WithSubnavigation from "../Layout/TopNav";
 
 const $lineHeight = "1rem";
 
@@ -35,6 +36,7 @@ const IndexPage: React.FC<PageProps> = () => {
   const { toggleColorMode } = useColorMode();
   return (
     <Box as="main">
+      <WithSubnavigation/>
       <Center height={"100%"} textAlign="center" mt={'50px'}>
         <Flex gap={$lineHeight} flexDir="column">
           <Heading
@@ -58,12 +60,12 @@ const IndexPage: React.FC<PageProps> = () => {
       <Box sx={{ position: 'absolute', width: '100%', height: '100vh' }} display={['none', 'block', 'block', 'block']} zIndex={'99'}>
 
         <Foxinfo order={4} textPosition={'left'} top={'290px'} left={['calc(29% - 150px)', 'calc(29% - 150px)', 'calc(29% - 340px)']}  title={'Proactive Problem Resolution'} description={'Our continuous monitoring service ensures that your systems and processes are under constant supervision, allowing us to detect and address issues before they escalate.'} image={<Image src={'/target.webp'} w={'100px'} />} />
-        <Foxinfo order={3} textPosition={'left'} top={'100px'} left={['calc(29% - 15x0px)', 'calc(29% - 150px)', 'calc(29% - 290px)']} title={<Text>Maintain vigilance <br/>around the clock.</Text>} description={'Our continuous monitoring service ensures that your systems and processes are under constant supervision, allowing us to detect and address issues before they escalate.'} image={<Image src={'/clock-time.webp'} w={'100px'} />} />
+        <Foxinfo order={3} textPosition={'left'} top={'100px'} left={['calc(29% - 15x0px)', 'calc(29% - 150px)', 'calc(29% - 290px)']} title={<Text>Maintain vigilance <br/>around the clock.</Text>} description={'Our continuous monitoring service ensures that your systems and processes are under constant supervision'} image={<Image src={'/clock-time.webp'} w={'100px'} />} />
 
-        <Foxinfo order={2} top={'290px'} left={['calc(50% + 100px)', 'calc(50% + 100px)', 'calc(50% + 250px)']} title={'Proactive Problem Resolution'} description={'Our continuous monitoring service ensures that your systems and processes are under constant supervision, allowing us to detect and address issues before they escalate.'} image={<Image src={'/target.webp'} w={'100px'} />} />
+        <Foxinfo order={2} top={'290px'} left={['calc(50% + 100px)', 'calc(50% + 100px)', 'calc(50% + 250px)']} title={'Proactive Problem Resolution'} description={'We will detect and address issues before they escalate.'} image={<Image src={'/target.webp'} w={'100px'} />} />
         <Foxinfo order={1} top={'100px'} left={['calc(50% + 100px)', 'calc(50% + 100px)', 'calc(50% + 200px)']}
           title={'Probe beyond the visible'}
-          description={<Text>Giving your business the competitive edge it deserves with our <strong>Data Analytics</strong> services to swiftly adapt to evolving market trends and deeply understand your customer's behaviors and needs. </Text>} image={<Image src={'/bar-chart.webp'} w={'100px'} />} />
+          description={<Text>Giving your business the competitive edge it deserves with our <strong>Data Analytics</strong>. </Text>} image={<Image src={'/bar-chart.webp'} w={'100px'} />} />
       </Box>
       <FloatingAnimation>
         <Center>
@@ -108,11 +110,11 @@ export const Foxinfo = (props: BoxProps & { title: string | React.ReactElement, 
   animation-timing-function: ease-in-out;
 `}  >
 
-    <Flex alignItems={'top'} flexDirection={ props.textPosition === 'left' ? 'row-reverse' : 'row'} textAlign={ props.textPosition === 'left' ? 'right' : 'left'}>
-      <Box w={'400px'}>
+    <Flex alignItems={'top'} gap={['5px']} flexDirection={ props.textPosition === 'left' ? 'row-reverse' : 'row'} textAlign={ props.textPosition === 'left' ? 'right' : 'left'}>
+      <Box w={'100px'}>
         {props.image}
       </Box>
-      <Box>
+      <Box w={'340px'}>
         <Heading fontSize={'28px'} color={'#E85816'} >
           {props.title}
         </Heading>
