@@ -146,7 +146,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage;
 
-export const Head: HeadFC = () => <title>Resilience Works</title>;
+export const Head: HeadFC = () => <title>Resilience Tech</title>;
 
 const blinking = keyframes`
   0% { opacity: 0 }
