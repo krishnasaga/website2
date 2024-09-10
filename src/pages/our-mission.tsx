@@ -54,7 +54,7 @@ const IndexPage: React.FC<PageProps> = () => {
           <Text fontSize={["2xl", "4xl"]} fontWeight={"bold"} color={"#4A5568"}>
             Mission statement
           </Text>
-          <Text fontSize={["2xl", "4xl"]}>
+          <Text fontSize={["1xl", "2xl"]}>
             We are dedicated to empowering small and medium-sized businesses in
             the UK to thrive in today’s rapidly evolving technological
             landscape. Through our expertise in data analytics and site
