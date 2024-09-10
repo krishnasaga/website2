@@ -270,7 +270,12 @@ const NAV_ITEMS: Array<NavItem> = [
       },
       {
         label: "Continues Monitoring",
-        subLabel: "Up-and-coming Designers",
+        subLabel: "Ensure that your systems under supervision",
+        href: "#",
+      },
+      {
+        label: "Explorative Testing",
+        subLabel: "Detect and address issues before they escalate",
         href: "#",
       },
     ],
