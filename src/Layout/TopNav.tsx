@@ -254,8 +254,8 @@ const NAV_ITEMS: Array<NavItem> = [
         href: "#",
       },
       {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
+        label: "Nimbus",
+        subLabel: "Resilient User interfaces at scale",
         href: "#",
       },
     ],
