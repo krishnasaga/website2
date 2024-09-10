@@ -48,7 +48,7 @@ const IndexPage: React.FC<PageProps> = () => {
               query="With Speed"
               styles={{ color: "purple.600", _dark: { color: "purple.400" } }}
             >
-              Resilience Works
+              Resilience Tech
             </Highlight>
           </Heading>
           <Text fontSize={["2xl", "4xl"]} fontWeight={"bold"} color={"#4A5568"}>
