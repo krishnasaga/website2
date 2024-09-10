@@ -243,7 +243,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Our Mission",
-    href: "#",
+    href: "/our-mission",
   },
   {
     label: "Products",
