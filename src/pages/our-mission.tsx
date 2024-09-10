@@ -57,25 +57,31 @@ const IndexPage: React.FC<PageProps> = () => {
           </Text>
           <Center>
             <Text fontSize={["1xl", "2xl"]} w={["100%", "100%", "100%", "50%"]}>
-              We are dedicated to empowering small and medium-sized businesses
-              in the UK to thrive in today’s rapidly evolving technological
-              landscape. Through our expertise in data analytics and site
-              reliability engineering, we help these businesses build resilient
-              IT systems that balance innovation with business continuity. By
-              addressing the unique challenges faced by UK SMEs — from the high
-              costs of forming skilled teams to the complexities of maintaining
-              operational resilience — we enable them to focus on their core
-              business, explore new opportunities, and make calculated decisions
-              with confidence. Our mission is to reduce their pain points and
-              enhance their capacity to sustain growth and success.
+              We help UK small and medium-sized businesses build resilient IT
+              systems that balance innovation and business continuity. By
+              leveraging data analytics and site reliability engineering, we
+              reduce costs, simplify operations, and enable our clients to focus
+              on growth, seize new opportunities, and make confident, strategic
+              decisions.
             </Text>
           </Center>
         </Flex>
       </Center>
       <Center>
         <Box w={["100%", "100%", "100%", "50%"]}>
+          <Text>
+            In today's digital era, the resilience of IT systems is vital for
+            small and medium-sized businesses (SMBs) in the UK to remain
+            competitive and achieve sustainable growth. As technology becomes
+            increasingly central to business operations, SMBs face rising
+            challenges in maintaining robust infrastructure while managing
+            costs, ensuring operational continuity, and fostering innovation.
+            Statistics reveal that a strong focus on data analytics and site
+            reliability can help SMBs navigate these challenges, minimize
+            disruptions, and unlock new opportunities for growth.
+          </Text>
           <Stack spacing={6}>
-            <Box p={4}  borderRadius="md" boxShadow="md">
+            <Box p={4} borderRadius="md" boxShadow="md">
               <Text fontSize="lg" fontWeight="bold">
                 Number of SMBs
               </Text>
@@ -86,7 +92,7 @@ const IndexPage: React.FC<PageProps> = () => {
               </Text>
             </Box>
 
-            <Box p={4}  borderRadius="md" boxShadow="md">
+            <Box p={4} borderRadius="md" boxShadow="md">
               <Text fontSize="lg" fontWeight="bold">
                 Employment
               </Text>
@@ -98,7 +104,7 @@ const IndexPage: React.FC<PageProps> = () => {
               </Text>
             </Box>
 
-            <Box p={4}  borderRadius="md" boxShadow="md">
+            <Box p={4} borderRadius="md" boxShadow="md">
               <Text fontSize="lg" fontWeight="bold">
                 Contribution to the Economy
               </Text>
@@ -110,7 +116,7 @@ const IndexPage: React.FC<PageProps> = () => {
               </Text>
             </Box>
 
-            <Box p={4}  borderRadius="md" boxShadow="md">
+            <Box p={4} borderRadius="md" boxShadow="md">
               <Text fontSize="lg" fontWeight="bold">
                 Regional Distribution
               </Text>
@@ -122,7 +128,7 @@ const IndexPage: React.FC<PageProps> = () => {
               </Text>
             </Box>
 
-            <Box p={4}  borderRadius="md" boxShadow="md">
+            <Box p={4} borderRadius="md" boxShadow="md">
               <Text fontSize="lg" fontWeight="bold">
                 Growth and Innovation
               </Text>
@@ -136,7 +142,7 @@ const IndexPage: React.FC<PageProps> = () => {
               </Text>
             </Box>
 
-            <Box p={4}  borderRadius="md" boxShadow="md">
+            <Box p={4} borderRadius="md" boxShadow="md">
               <Text fontSize="lg" fontWeight="bold">
                 Impact of COVID-19
               </Text>
@@ -148,7 +154,7 @@ const IndexPage: React.FC<PageProps> = () => {
               </Text>
             </Box>
 
-            <Box p={4}  borderRadius="md" boxShadow="md">
+            <Box p={4} borderRadius="md" boxShadow="md">
               <Text fontSize="lg" fontWeight="bold">
                 Export Contribution
               </Text>
@@ -160,7 +166,7 @@ const IndexPage: React.FC<PageProps> = () => {
               </Text>
             </Box>
 
-            <Box p={4}  borderRadius="md" boxShadow="md">
+            <Box p={4} borderRadius="md" boxShadow="md">
               <Text fontSize="lg" fontWeight="bold">
                 Access to Finance
               </Text>
@@ -173,7 +179,7 @@ const IndexPage: React.FC<PageProps> = () => {
               </Text>
             </Box>
 
-            <Box p={4}  borderRadius="md" boxShadow="md">
+            <Box p={4} borderRadius="md" boxShadow="md">
               <Text fontSize="lg" fontWeight="bold">
                 Sectoral Distribution
               </Text>
