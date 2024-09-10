@@ -134,7 +134,7 @@ const IndexPage: React.FC<PageProps> = () => {
           fontSize={["40px", "48px"]}
           color={"#1A365D"}
         >
-          How we enable <br />
+          We enable <br />
           your technology to thrive
         </Heading>
       </Center>
