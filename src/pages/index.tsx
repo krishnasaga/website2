@@ -95,7 +95,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
         <Foxinfo
           order={2}
-          top={"290px"}
+          top={"250px"}
           left={["calc(50% + 100px)", "calc(50% + 100px)", "calc(50% + 250px)"]}
           title={"Proactive Problem Resolution"}
           description={
