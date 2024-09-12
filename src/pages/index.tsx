@@ -65,7 +65,7 @@ const IndexPage: React.FC<PageProps> = () => {
           order={4}
           textPosition={"left"}
           top={"290px"}
-          left={["calc(29% - 150px)", "calc(29% - 250px)", "calc(29% - 250px)", "calc(29% - 340px)"]}
+          left={["calc(29% - 150px)", "calc(29% - 340px)", "calc(29% - 340px)", "calc(29% - 340px)"]}
           title={"Proactive Problem Resolution"}
           description={
             "Our continuous monitoring service ensures that your systems and processes are under constant supervision, allowing us to detect and address issues before they escalate."
