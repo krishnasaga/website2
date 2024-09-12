@@ -37,7 +37,7 @@ const IndexPage: React.FC<PageProps> = () => {
     <Box as="main">
       <WithSubnavigation />
       <Center height={"100%"} textAlign="center" mt={"50px"}>
-        <Flex gap={$lineHeight} flexDir="column" px={'16px'}>
+        <Flex gap={$lineHeight} flexDir="column" px={"16px"}>
           <Heading
             as="h1"
             size="4xl"
@@ -193,9 +193,12 @@ export const Foxinfo = (
         flexDirection={props.textPosition === "left" ? "row-reverse" : "row"}
         textAlign={props.textPosition === "left" ? "right" : "left"}
       >
-        <Box w={"100px"}>{props.image}</Box>
+        <Box w={["75px","75px","75px","100px"]}>{props.image}</Box>
         <Box w={"340px"}>
-          <Heading fontSize={"28px"} color={"#E85816"}>
+          <Heading
+            fontSize={["14px", "14px", "14px", "28px"]}
+            color={"#E85816"}
+          >
             {props.title}
           </Heading>
           <Text color={"#1A365D"}>{props.description}</Text>
