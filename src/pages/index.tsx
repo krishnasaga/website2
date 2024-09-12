@@ -37,7 +37,7 @@ const IndexPage: React.FC<PageProps> = () => {
     <Box as="main">
       <WithSubnavigation />
       <Center height={"100%"} textAlign="center" mt={"50px"}>
-        <Flex gap={$lineHeight} flexDir="column">
+        <Flex gap={$lineHeight} flexDir="column" px={'16px'}>
           <Heading
             as="h1"
             size="4xl"
