@@ -120,7 +120,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <FloatingAnimation>
         <Center>
           <Image
-            maxW={["100%", "50%"]}
+            maxW={["100%", "40%",,"40%","40%","50%"]}
             marginLeft={["50px", "10%"]}
             src="/superherofox-small.png"
           />
