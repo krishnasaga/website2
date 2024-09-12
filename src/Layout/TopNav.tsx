@@ -93,7 +93,7 @@ const DesktopNav = () => {
                 as="a"
                 p={2}
                 href={navItem.href ?? "#"}
-                fontSize={"sm"}
+                fontSize={"md"}
                 fontWeight={500}
                 color={linkColor}
                 _hover={{
@@ -148,7 +148,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
           >
             {label}
           </Text>
-          <Text fontSize={"sm"}>{subLabel}</Text>
+          <Text fontsize={"md"}>{subLabel}</Text>
         </Box>
         <Flex
           transition={"all .3s ease"}
