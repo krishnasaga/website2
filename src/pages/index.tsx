@@ -65,7 +65,7 @@ const IndexPage: React.FC<PageProps> = () => {
           order={4}
           textPosition={"left"}
           top={"290px"}
-          left={["calc(29% - 150px)", "calc(29% - 340px)", "calc(29% - 340px)", "calc(29% - 340px)"]}
+          left={["calc(29% - 150px)", "calc(29% - 150px)", "calc(29% - 340px)"]}
           title={"Proactive Problem Resolution"}
           description={
             "Our continuous monitoring service ensures that your systems and processes are under constant supervision, allowing us to detect and address issues before they escalate."
@@ -95,7 +95,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
         <Foxinfo
           order={2}
-          top={["200px","200px","200px","200px","200px","250px"]}
+          top={["200px","200px","200px","200px","250px","250px"]}
           left={["calc(50% + 100px)", "calc(50% + 100px)", "calc(50% + 250px)"]}
           title={"Proactive Problem Resolution"}
           description={
@@ -106,7 +106,7 @@ const IndexPage: React.FC<PageProps> = () => {
         <Foxinfo
           order={1}
           top={"100px"}
-          left={["calc(50% + 100px)", "calc(50% + 100px)", "calc(50% + 200px)"]}
+          left={["calc(50% + 100px)", "calc(50% + 250px)", "calc(50% + 200px)"]}
           title={"Probe beyond the visible"}
           description={
             <Text>
