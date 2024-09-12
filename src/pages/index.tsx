@@ -196,7 +196,7 @@ export const Foxinfo = (
         <Box w={["75px","75px","75px",,"75px","100px"]}>{props.image}</Box>
         <Box w={"340px"}>
           <Heading
-            fontSize={["14px", "14px", "14px", "14px", "28px"]}
+            fontSize={["14px", "14px", "22px", "22px", "28px"]}
             color={"#E85816"}
           >
             {props.title}
