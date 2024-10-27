@@ -47,6 +47,7 @@ export default function HeroSection() {
             fontSize={{ base: "2xl", md: "3xl" }}
             color="#E85816"
             p={{ base: "16x", md: "32px" }}
+            fontWeight={'bold'}
           >
             Gain big-business insights, streamline operations, and quickly adapt
             to market changes. Our solutions empower you to uncover hidden
