@@ -66,14 +66,14 @@ const Slideshow = () => {
       placeholder="blurred"
     />,
     <StaticImage
-      src="../images/small-business2.avif"
+      src="../images/small-business2.jpg"
       alt="Image 2"
       layout="fullWidth"
       style={{ width: "100%", height: "100%" }}
       placeholder="blurred"
     />,
     <StaticImage
-      src="../images/small-business3.avif"
+      src="../images/small-business3.jpg"
       alt="Image 3"
       layout="fullWidth"
       style={{ width: "100%", height: "100%" }}
