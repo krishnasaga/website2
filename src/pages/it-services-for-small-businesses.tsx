@@ -64,6 +64,7 @@ const Slideshow = () => {
       layout="fullWidth"
       style={{ width: "100%", height: "100%" }}
       placeholder="blurred"
+      objectPosition={'50% 50%'}
     />,
     <StaticImage
       src="../images/small-business2.jpg"
