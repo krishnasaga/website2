@@ -78,7 +78,7 @@ export default function HeroSection() {
               services and products
             </Text>
           </VStack>
-          <Box h={'70%'} borderRadius={'20px'} overflow={'hidden'} m={'32px'}>
+          <Box h={"70%"} borderRadius={"20px"} overflow={"hidden"} m={"32px"}>
             <StaticImage
               src="../images/business-online.jpg"
               alt="Your Business, Seen and Heard Online"
@@ -110,7 +110,40 @@ export default function HeroSection() {
               color="#E85816"
               p={{ base: "16x", md: "32px" }}
               fontWeight={"bold"}
-            ></Text>
+            >
+              A Website the design resonates with and reinforces the brand
+              identity.
+            </Text>
+            <Text
+              fontSize={{ base: "2xl", md: "4xl" }}
+              color="#E85816"
+              p={{ base: "16x", md: "32px" }}
+              fontWeight={"bold"}
+            >
+              Develop a sleek, user-friendly UI that enhances customer
+              experience.
+            </Text>
+
+            <Text
+              fontSize={{ base: "2xl", md: "4xl" }}
+              color="#E85816"
+              p={{ base: "16x", md: "32px" }}
+              fontWeight={"bold"}
+            >
+              {" "}
+              Design a UI that not only looks great but actively drives
+              conversions.
+            </Text>
+
+            <Text
+              fontSize={{ base: "2xl", md: "4xl" }}
+              color="#E85816"
+              p={{ base: "16x", md: "32px" }}
+              fontWeight={"bold"}
+            >
+              Create an interface that reflects the high quality of the client's
+              work.
+            </Text>
           </VStack>
           <Box p={"40px"}>
             <StaticImage
