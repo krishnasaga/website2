@@ -68,41 +68,43 @@ export default function HeroSection() {
             >
               Your Business, Seen and Heard Online
             </Heading>
-            <Text
-              fontSize={{ base: "2xl", md: "4xl" }}
-              color="#E85816"
-              fontWeight={"bold"}
-            >
-              A Website the design resonates with and reinforces the brand
-              identity.
-            </Text>
-            <Text
-              fontSize={{ base: "2xl", md: "4xl" }}
-              color="#E85816"
-              fontWeight={"bold"}
-            >
-              Develop a sleek, user-friendly UI that enhances customer
-              experience.
-            </Text>
+            <Box p={{ base: "16x", md: "32px" }} >
+              <Text
+                fontSize={{ base: "lg", md: "lg" }}
+                color="#E85816"
+                fontWeight={"bold"}
+              >
+                A Website the design resonates with and reinforces the brand
+                identity.
+              </Text>
+              <Text
+                fontSize={{ base: "lg", md: "lg" }}
+                color="#E85816"
+                fontWeight={"bold"}
+              >
+                Develop a sleek, user-friendly UI that enhances customer
+                experience.
+              </Text>
 
-            <Text
-              fontSize={{ base: "2xl", md: "4xl" }}
-              color="#E85816"
-              fontWeight={"bold"}
-            >
-              {" "}
-              Design a UI that not only looks great but actively drives
-              conversions.
-            </Text>
+              <Text
+                fontSize={{ base: "lg", md: "lg" }}
+                color="#E85816"
+                fontWeight={"bold"}
+              >
+                {" "}
+                Design a UI that not only looks great but actively drives
+                conversions.
+              </Text>
 
-            <Text
-              fontSize={{ base: "2xl", md: "4xl" }}
-              color="#E85816"
-              fontWeight={"bold"}
-            >
-              Create an interface that reflects the high quality of the client's
-              work.
-            </Text>
+              <Text
+                fontSize={{ base: "lg", md: "lg" }}
+                color="#E85816"
+                fontWeight={"bold"}
+              >
+                Create an interface that reflects the high quality of the
+                client's work.
+              </Text>
+            </Box>
           </VStack>
           <Box h={"70%"} borderRadius={"20px"} overflow={"hidden"} m={"32px"}>
             <StaticImage
