@@ -81,7 +81,7 @@ export default function HeroSection() {
           <Box p={"40px"}>
             <StaticImage
               src="../images/business-online.jpg"
-              alt="Image 2"
+              alt="Your Business, Seen and Heard Online"
               layout="fullWidth"
               style={{ width: "100%", height: "100%" }}
               placeholder="blurred"
@@ -104,19 +104,14 @@ export default function HeroSection() {
               fontWeight="bold"
               p={{ base: "16x", md: "32px" }}
             >
-              Big Impact Technology for Small Businesses
+              Payments and Accounting
             </Heading>
             <Text
               fontSize={{ base: "2xl", md: "4xl" }}
               color="#E85816"
               p={{ base: "16x", md: "32px" }}
               fontWeight={"bold"}
-            >
-              Bring your authentic vision to life and let your passion drive
-              growth in a rapidly advancing technological world. Gain
-              big-business insights, streamline operations, and quickly adapt to
-              market changes.
-            </Text>
+            ></Text>
           </VStack>
           <Box p={"40px"}>
             <StaticImage
@@ -145,19 +140,14 @@ export default function HeroSection() {
               fontWeight="bold"
               p={{ base: "16x", md: "32px" }}
             >
-              Big Impact Technology for Small Businesses
+              Marketing
             </Heading>
             <Text
               fontSize={{ base: "2xl", md: "4xl" }}
               color="#E85816"
               p={{ base: "16x", md: "32px" }}
               fontWeight={"bold"}
-            >
-              Bring your authentic vision to life and let your passion drive
-              growth in a rapidly advancing technological world. Gain
-              big-business insights, streamline operations, and quickly adapt to
-              market changes.
-            </Text>
+            ></Text>
           </VStack>
           <Box p={"40px"}>
             <StaticImage
@@ -185,7 +175,7 @@ export default function HeroSection() {
               fontWeight="bold"
               p={{ base: "16x", md: "32px" }}
             >
-              Big Impact Technology for Small Businesses
+              E Commerce
             </Heading>
             <Text
               fontSize={{ base: "2xl", md: "4xl" }}
@@ -193,10 +183,7 @@ export default function HeroSection() {
               p={{ base: "16x", md: "32px" }}
               fontWeight={"bold"}
             >
-              Bring your authentic vision to life and let your passion drive
-              growth in a rapidly advancing technological world. Gain
-              big-business insights, streamline operations, and quickly adapt to
-              market changes.
+
             </Text>
           </VStack>
           <Box p={"40px"}>
