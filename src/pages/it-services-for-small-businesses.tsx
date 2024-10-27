@@ -21,7 +21,7 @@ export default function HeroSection() {
         templateColumns={{ base: "1fr", md: "1fr 1fr" }}
         gap={6}
         alignItems="center"
-        h={"calc(100% - 70px)"}
+        h={"calc(100% - 50px)"}
       >
         <Box width="100%" height="100%" position="relative">
           <StaticImage
