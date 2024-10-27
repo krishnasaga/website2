@@ -108,7 +108,7 @@ const Slideshow = () => {
             width="100%"
             height="100%"
             opacity={index === currentImage ? 1 : 0}
-            transition="opacity 1s ease-in-out"
+            transition="opacity 0.2s ease-in-out"
           >
             {image}
           </Box>
