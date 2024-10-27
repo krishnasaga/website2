@@ -71,7 +71,6 @@ export default function HeroSection() {
             <Text
               fontSize={{ base: "2xl", md: "4xl" }}
               color="#E85816"
-              p={{ base: "16x", md: "32px" }}
               fontWeight={"bold"}
             >
               A Website the design resonates with and reinforces the brand
@@ -80,7 +79,6 @@ export default function HeroSection() {
             <Text
               fontSize={{ base: "2xl", md: "4xl" }}
               color="#E85816"
-              p={{ base: "16x", md: "32px" }}
               fontWeight={"bold"}
             >
               Develop a sleek, user-friendly UI that enhances customer
@@ -90,7 +88,6 @@ export default function HeroSection() {
             <Text
               fontSize={{ base: "2xl", md: "4xl" }}
               color="#E85816"
-              p={{ base: "16x", md: "32px" }}
               fontWeight={"bold"}
             >
               {" "}
@@ -101,7 +98,6 @@ export default function HeroSection() {
             <Text
               fontSize={{ base: "2xl", md: "4xl" }}
               color="#E85816"
-              p={{ base: "16x", md: "32px" }}
               fontWeight={"bold"}
             >
               Create an interface that reflects the high quality of the client's
