@@ -78,7 +78,7 @@ export default function HeroSection() {
               services and products
             </Text>
           </VStack>
-          <Box p={"40px"}>
+          <Box h={'70%'} borderRadius={'20px'}>
             <StaticImage
               src="../images/business-online.jpg"
               alt="Your Business, Seen and Heard Online"
