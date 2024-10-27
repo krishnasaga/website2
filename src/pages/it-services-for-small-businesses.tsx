@@ -44,7 +44,7 @@ export default function HeroSection() {
             Big Impact Technology for Small Businesses
           </Heading>
           <Text
-            fontSize={{ base: "2xl", md: "3xl" }}
+            fontSize={{ base: "2xl", md: "4xl" }}
             color="#E85816"
             p={{ base: "16x", md: "32px" }}
             fontWeight={'bold'}
