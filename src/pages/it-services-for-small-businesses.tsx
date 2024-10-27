@@ -140,7 +140,7 @@ export default function HeroSection() {
               fontWeight="bold"
               p={{ base: "16x", md: "32px" }}
             >
-              Marketing
+              Shine Brighter
             </Heading>
             <Text
               fontSize={{ base: "2xl", md: "4xl" }}
