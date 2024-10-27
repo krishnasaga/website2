@@ -42,9 +42,10 @@ export default function HeroSection() {
             p={{ base: "16x", md: "32px" }}
             fontWeight={"bold"}
           >
-            Gain big-business insights, streamline operations, and quickly adapt
-            to market changes. Bring your authentic vision to life and let your
-            passion drive growth in a rapidly advancing technological world.
+            Bring your authentic vision to life and let your passion drive
+            growth in a rapidly advancing technological world. Gain big-business
+            insights, streamline operations, and quickly adapt to market
+            changes.
           </Text>
         </VStack>
       </Grid>
