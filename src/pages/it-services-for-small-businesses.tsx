@@ -104,6 +104,41 @@ export default function HeroSection() {
               fontWeight="bold"
               p={{ base: "16x", md: "32px" }}
             >
+              Shine Brighter
+            </Heading>
+            <Text
+              fontSize={{ base: "2xl", md: "4xl" }}
+              color="#E85816"
+              p={{ base: "16x", md: "32px" }}
+              fontWeight={"bold"}
+            ></Text>
+          </VStack>
+          <Box p={"40px"}>
+            <StaticImage
+              src="../images/small-business2.jpg"
+              alt="Image 2"
+              layout="fullWidth"
+              style={{ width: "100%", height: "100%" }}
+              placeholder="blurred"
+            />
+          </Box>
+        </Grid>
+      </Box>
+      <Box h={"100vh"}>
+        <Grid
+          templateColumns={{ base: "1fr", md: "1fr 1fr" }}
+          gap={6}
+          alignItems="center"
+          h={"calc(100% - 50px)"}
+        >
+          {/* Right Section: Content */}
+          <VStack align="flex-start" spacing={6}>
+            <Heading
+              as="h1"
+              fontSize={{ base: "2xl", md: "6xl" }}
+              fontWeight="bold"
+              p={{ base: "16x", md: "32px" }}
+            >
               Payments and Accounting
             </Heading>
             <Text
@@ -140,41 +175,6 @@ export default function HeroSection() {
               fontWeight="bold"
               p={{ base: "16x", md: "32px" }}
             >
-              Shine Brighter
-            </Heading>
-            <Text
-              fontSize={{ base: "2xl", md: "4xl" }}
-              color="#E85816"
-              p={{ base: "16x", md: "32px" }}
-              fontWeight={"bold"}
-            ></Text>
-          </VStack>
-          <Box p={"40px"}>
-            <StaticImage
-              src="../images/small-business2.jpg"
-              alt="Image 2"
-              layout="fullWidth"
-              style={{ width: "100%", height: "100%" }}
-              placeholder="blurred"
-            />
-          </Box>
-        </Grid>
-      </Box>
-      <Box h={"100vh"}>
-        <Grid
-          templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-          gap={6}
-          alignItems="center"
-          h={"calc(100% - 50px)"}
-        >
-          {/* Right Section: Content */}
-          <VStack align="flex-start" spacing={6}>
-            <Heading
-              as="h1"
-              fontSize={{ base: "2xl", md: "6xl" }}
-              fontWeight="bold"
-              p={{ base: "16x", md: "32px" }}
-            >
               E Commerce
             </Heading>
             <Text
@@ -182,9 +182,7 @@ export default function HeroSection() {
               color="#E85816"
               p={{ base: "16x", md: "32px" }}
               fontWeight={"bold"}
-            >
-
-            </Text>
+            ></Text>
           </VStack>
           <Box p={"40px"}>
             <StaticImage
