@@ -8,9 +8,10 @@ import {
   Grid,
   Heading,
   VStack,
+  Fade,
 } from "@chakra-ui/react";
 import { StaticImage } from "gatsby-plugin-image";
-import React from "react";
+import React, { useState,useEffect } from "react";
 import TopNav from "../Layout/TopNav";
 
 export default function HeroSection() {
@@ -23,15 +24,7 @@ export default function HeroSection() {
         alignItems="center"
         h={"calc(100% - 50px)"}
       >
-        <Box width="100%" height="100%" position="relative">
-          <StaticImage
-            src="../images/small-business2.avif"
-            alt="Abstract green design"
-            placeholder="blurred"
-            layout="fullWidth" // Set to fullWidth to occupy 100% width
-            style={{ width: "100%", height: "100%" }} // Ensure it takes full width and height
-          />
-        </Box>
+        <Slideshow />
 
         {/* Right Section: Content */}
         <VStack align="flex-start" spacing={6}>
@@ -47,7 +40,7 @@ export default function HeroSection() {
             fontSize={{ base: "2xl", md: "4xl" }}
             color="#E85816"
             p={{ base: "16x", md: "32px" }}
-            fontWeight={'bold'}
+            fontWeight={"bold"}
           >
             Gain big-business insights, streamline operations, and quickly adapt
             to market changes. Our solutions empower you to uncover hidden
@@ -59,3 +52,68 @@ export default function HeroSection() {
     </Box>
   );
 }
+
+const Slideshow = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  // Array of images to display in the slideshow
+  const images = [
+    <StaticImage
+      src="../images/small-business1.avif"
+      alt="Image 1"
+      layout="fullWidth"
+      style={{ width: "100%", height: "100%" }}
+      placeholder="blurred"
+    />,
+    <StaticImage
+      src="../images/small-business2.avif"
+      alt="Image 2"
+      layout="fullWidth"
+      style={{ width: "100%", height: "100%" }}
+      placeholder="blurred"
+    />,
+    <StaticImage
+      src="../images/small-business3.avif"
+      alt="Image 3"
+      layout="fullWidth"
+      style={{ width: "100%", height: "100%" }}
+      placeholder="blurred"
+    />,
+    <StaticImage
+    src="../images/small-business4.jpg"
+    alt="Image 3"
+    layout="fullWidth"
+    style={{ width: "100%", height: "100%" }}
+    placeholder="blurred"
+  />,
+  ];
+
+  // Cycle through images every 4 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, [images.length]);
+
+  return (
+    <Box position="relative" width="100%" height="100%">
+      {images.map((image, index) => (
+        <Fade in={index === currentImage} key={index}>
+          <Box
+            position="absolute"
+            top={0}
+            left={0}
+            width="100%"
+            height="100%"
+            opacity={index === currentImage ? 1 : 0}
+            transition="opacity 1s ease-in-out"
+          >
+            {image}
+          </Box>
+        </Fade>
+      ))}
+    </Box>
+  );
+};
