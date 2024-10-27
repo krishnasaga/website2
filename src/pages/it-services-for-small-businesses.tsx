@@ -66,7 +66,7 @@ export default function HeroSection() {
               fontWeight="bold"
               p={{ base: "16x", md: "32px" }}
             >
-              Big Impact Technology for Small Businesses
+              Your Business, Seen and Heard Online
             </Heading>
             <Text
               fontSize={{ base: "2xl", md: "4xl" }}
@@ -74,10 +74,8 @@ export default function HeroSection() {
               p={{ base: "16x", md: "32px" }}
               fontWeight={"bold"}
             >
-              Bring your authentic vision to life and let your passion drive
-              growth in a rapidly advancing technological world. Gain
-              big-business insights, streamline operations, and quickly adapt to
-              market changes.
+              Website with smooth UI that resonates with quality of your
+              services and products
             </Text>
           </VStack>
           <Box p={"40px"}>
@@ -106,7 +104,7 @@ export default function HeroSection() {
               fontWeight="bold"
               p={{ base: "16x", md: "32px" }}
             >
-              Make Your Business Visible
+              Big Impact Technology for Small Businesses
             </Heading>
             <Text
               fontSize={{ base: "2xl", md: "4xl" }}
@@ -114,8 +112,10 @@ export default function HeroSection() {
               p={{ base: "16x", md: "32px" }}
               fontWeight={"bold"}
             >
-              Website with smooth UI that resonates with quality of your
-              services and products
+              Bring your authentic vision to life and let your passion drive
+              growth in a rapidly advancing technological world. Gain
+              big-business insights, streamline operations, and quickly adapt to
+              market changes.
             </Text>
           </VStack>
           <Box p={"40px"}>
@@ -129,6 +129,7 @@ export default function HeroSection() {
           </Box>
         </Grid>
       </Box>
+
       <Box h={"100vh"}>
         <Grid
           templateColumns={{ base: "1fr", md: "1fr 1fr" }}
