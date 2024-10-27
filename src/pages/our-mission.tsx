@@ -56,13 +56,14 @@ const IndexPage: React.FC<PageProps> = () => {
             Mission statement
           </Text>
           <Center>
-            <Text fontSize={["1xl", "2xl"]} w={["100%", "100%", "100%", "50%"]}>
-              We help UK small and medium-sized businesses build resilient IT
-              systems that balance innovation and business continuity. By
-              leveraging data analytics and site reliability engineering, we
-              reduce costs, simplify operations, and enable our clients to focus
-              on growth, seize new opportunities, and make confident, strategic
-              decisions.
+            <Text fontSize={["1xl", "2xl"]} w={["100%", "100%", "100%", "50%"]} mb={10}>
+              At the heart of every small business is a relentless drive to
+              create something meaningful. Our IT solutions are crafted to
+              support that journey—balancing innovation with stability, and
+              simplicity with power. We’re here to help you scale with
+              confidence, so you can focus on the impact you’re here to make.
+
+
             </Text>
           </Center>
         </Flex>

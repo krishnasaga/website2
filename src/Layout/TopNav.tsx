@@ -1,80 +1,83 @@
 "use client";
 
+import React from "react";
 import {
   Box,
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
-  Collapse,
-  Icon,
   Popover,
   PopoverTrigger,
   PopoverContent,
+  Portal,
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
+  PortalManager,
+  Button,
+  Collapse,
 } from "@chakra-ui/react";
-import {
-  HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from "@chakra-ui/icons";
-import React from "react";
+import { HamburgerIcon, CloseIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
-      <Flex
-        bg={useColorModeValue("white", "gray.800")}
-        color={useColorModeValue("gray.600", "white")}
-        minH={"60px"}
-        py={{ base: 2 }}
-        px={{ base: 4 }}
-        borderBottom={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
-        align={"center"}
-      >
+    <PortalManager zIndex={9999}>
+      <Box>
         <Flex
-          flex={{ base: 1, md: "auto" }}
-          ml={{ base: -2 }}
-          display={{ base: "flex", md: "none" }}
+          bg={useColorModeValue("white", "gray.800")}
+          color={useColorModeValue("gray.600", "white")}
+          minH={"60px"}
+          py={{ base: 2 }}
+          px={{ base: 4 }}
+          borderBottom={1}
+          borderStyle={"solid"}
+          borderColor={useColorModeValue("gray.200", "gray.900")}
+          align={"center"}
         >
-          <IconButton
-            onClick={onToggle}
-            icon={
-              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-            }
-            variant={"ghost"}
-            aria-label={"Toggle Navigation"}
-          />
-        </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "center" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-          ></Text>
-
           <Flex
-            display={{ base: "none", md: "flex" }}
-            justifyContent={"center"}
-            ml={{ base: 10, md: "initial" }}
+            flex={{ base: 1, md: "auto" }}
+            ml={{ base: -2 }}
+            display={{ base: "flex", md: "none" }}
           >
-            <DesktopNav />
+            <IconButton
+              onClick={onToggle}
+              icon={
+                isOpen ? (
+                  <CloseIcon w={3} h={3} />
+                ) : (
+                  <HamburgerIcon w={5} h={5} />
+                )
+              }
+              variant={"ghost"}
+              aria-label={"Toggle Navigation"}
+            />
+          </Flex>
+          <Flex flex={{ base: 1 }} justify={{ base: "center", md: "center" }}>
+            <Text
+              textAlign={useBreakpointValue({ base: "center", md: "left" })}
+              fontFamily={"heading"}
+              color={useColorModeValue("gray.800", "white")}
+            >
+            </Text>
+
+            <Flex
+              display={{ base: "none", md: "flex" }}
+              justifyContent={"center"}
+              ml={{ base: 10, md: "initial" }}
+            >
+              <DesktopNav />
+            </Flex>
           </Flex>
         </Flex>
-      </Flex>
 
-      <Collapse in={isOpen} animateOpacity>
-        <MobileNav />
-      </Collapse>
-    </Box>
+        <Collapse in={isOpen} animateOpacity>
+          <MobileNav />
+        </Collapse>
+      </Box>
+    </PortalManager>
   );
 }
 
@@ -106,20 +109,25 @@ const DesktopNav = () => {
             </PopoverTrigger>
 
             {navItem.children && (
-              <PopoverContent
-                border={0}
-                boxShadow={"xl"}
-                bg={popoverContentBgColor}
-                p={4}
-                rounded={"xl"}
-                minW={"sm"}
-              >
-                <Stack>
-                  {navItem.children.map((child) => (
-                    <DesktopSubNav key={child.label} {...child} />
-                  ))}
-                </Stack>
-              </PopoverContent>
+              <Portal>
+                {" "}
+                {/* Enforcing portal usage here */}
+                <PopoverContent
+                  border={0}
+                  boxShadow={"xl"}
+                  bg={popoverContentBgColor}
+                  p={4}
+                  rounded={"xl"}
+                  minW={"sm"}
+                  zIndex="9999" // Ensuring high zIndex
+                >
+                  <Stack>
+                    {navItem.children.map((child) => (
+                      <DesktopSubNav key={child.label} {...child} />
+                    ))}
+                  </Stack>
+                </PopoverContent>
+              </Portal>
             )}
           </Popover>
         </Box>
@@ -128,7 +136,7 @@ const DesktopNav = () => {
   );
 };
 
-const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+const DesktopSubNav = ({ label, href, subLabel }: any) => {
   return (
     <Box
       as="a"
@@ -148,7 +156,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
           >
             {label}
           </Text>
-          <Text fontsize={"md"}>{subLabel}</Text>
+          <Text fontSize={"sm"}>{subLabel}</Text>
         </Box>
         <Flex
           transition={"all .3s ease"}
@@ -159,7 +167,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
           align={"center"}
           flex={1}
         >
-          <Icon color={"pink.400"} w={5} h={5} as={ChevronRightIcon} />
+          <ChevronRightIcon color={"pink.400"} w={5} h={5} />
         </Flex>
       </Stack>
     </Box>
@@ -180,7 +188,7 @@ const MobileNav = () => {
   );
 };
 
-const MobileNavItem = ({ label, children, href }: NavItem) => {
+const MobileNavItem = ({ label, children, href }: any) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -201,15 +209,6 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         >
           {label}
         </Text>
-        {children && (
-          <Icon
-            as={ChevronDownIcon}
-            transition={"all .25s ease-in-out"}
-            transform={isOpen ? "rotate(180deg)" : ""}
-            w={6}
-            h={6}
-          />
-        )}
       </Box>
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
@@ -222,7 +221,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           align={"start"}
         >
           {children &&
-            children.map((child) => (
+            children.map((child: any) => (
               <Box as="a" key={child.label} py={2} href={child.href}>
                 {child.label}
               </Box>
@@ -233,14 +232,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
   );
 };
 
-interface NavItem {
-  label: string;
-  subLabel?: string;
-  children?: Array<NavItem>;
-  href?: string;
-}
-
-const NAV_ITEMS: Array<NavItem> = [
+const NAV_ITEMS = [
   {
     label: "Our Mission",
     href: "/our-mission",
@@ -269,14 +261,19 @@ const NAV_ITEMS: Array<NavItem> = [
         href: "#",
       },
       {
-        label: "Continues Monitoring",
-        subLabel: "Ensure that your systems under supervision",
+        label: "Continuous Monitoring",
+        subLabel: "Ensure that your systems are under supervision",
         href: "#",
       },
       {
         label: "Explorative Testing",
         subLabel: "Detect and address issues before they escalate",
         href: "#",
+      },
+      {
+        label: "IT Services for Small Business",
+        subLabel: "All You Need for IT Success",
+        href: "/it-services-for-small-businesses",
       },
     ],
   },
