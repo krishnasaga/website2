@@ -74,43 +74,6 @@ export default function HeroSection() {
               p={{ base: "16x", md: "32px" }}
               fontWeight={"bold"}
             >
-              Website with smooth UI that resonates with quality of your
-              services and products
-            </Text>
-          </VStack>
-          <Box h={"70%"} borderRadius={"20px"} overflow={"hidden"} m={"32px"}>
-            <StaticImage
-              src="../images/business-online.jpg"
-              alt="Your Business, Seen and Heard Online"
-              objectFit="cover"
-              placeholder="blurred"
-            />
-          </Box>
-        </Grid>
-      </Box>
-      <Box h={"100vh"}>
-        <Grid
-          templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-          gap={6}
-          alignItems="center"
-          h={"calc(100% - 50px)"}
-        >
-          {/* Right Section: Content */}
-          <VStack align="flex-start" spacing={6}>
-            <Heading
-              as="h1"
-              fontSize={{ base: "2xl", md: "6xl" }}
-              fontWeight="bold"
-              p={{ base: "16x", md: "32px" }}
-            >
-              Shine Brighter
-            </Heading>
-            <Text
-              fontSize={{ base: "2xl", md: "4xl" }}
-              color="#E85816"
-              p={{ base: "16x", md: "32px" }}
-              fontWeight={"bold"}
-            >
               A Website the design resonates with and reinforces the brand
               identity.
             </Text>
@@ -144,6 +107,34 @@ export default function HeroSection() {
               Create an interface that reflects the high quality of the client's
               work.
             </Text>
+          </VStack>
+          <Box h={"70%"} borderRadius={"20px"} overflow={"hidden"} m={"32px"}>
+            <StaticImage
+              src="../images/business-online.jpg"
+              alt="Your Business, Seen and Heard Online"
+              objectFit="cover"
+              placeholder="blurred"
+            />
+          </Box>
+        </Grid>
+      </Box>
+      <Box h={"100vh"}>
+        <Grid
+          templateColumns={{ base: "1fr", md: "1fr 1fr" }}
+          gap={6}
+          alignItems="center"
+          h={"calc(100% - 50px)"}
+        >
+          {/* Right Section: Content */}
+          <VStack align="flex-start" spacing={6}>
+            <Heading
+              as="h1"
+              fontSize={{ base: "2xl", md: "6xl" }}
+              fontWeight="bold"
+              p={{ base: "16x", md: "32px" }}
+            >
+              Shine Brighter
+            </Heading>
           </VStack>
           <Box p={"40px"}>
             <StaticImage
