@@ -11,7 +11,7 @@ import {
   Fade,
 } from "@chakra-ui/react";
 import { StaticImage } from "gatsby-plugin-image";
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import TopNav from "../Layout/TopNav";
 
 export default function HeroSection() {
@@ -43,9 +43,8 @@ export default function HeroSection() {
             fontWeight={"bold"}
           >
             Gain big-business insights, streamline operations, and quickly adapt
-            to market changes. Our solutions empower you to uncover hidden
-            opportunities, connect deeper with customers, and stay competitive
-            in an evolving digital landscape.
+            to market changes. Bring your authentic vision to life and let your
+            passion drive growth in a rapidly advancing technological world.
           </Text>
         </VStack>
       </Grid>
@@ -80,12 +79,12 @@ const Slideshow = () => {
       placeholder="blurred"
     />,
     <StaticImage
-    src="../images/small-business4.jpg"
-    alt="Image 3"
-    layout="fullWidth"
-    style={{ width: "100%", height: "100%" }}
-    placeholder="blurred"
-  />,
+      src="../images/small-business4.avif"
+      alt="Image 3"
+      layout="fullWidth"
+      style={{ width: "100%", height: "100%" }}
+      placeholder="blurred"
+    />,
   ];
 
   // Cycle through images every 4 seconds
