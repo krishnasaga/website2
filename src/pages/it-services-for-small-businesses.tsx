@@ -83,7 +83,7 @@ export default function HeroSection() {
               src="../images/business-online.jpg"
               alt="Your Business, Seen and Heard Online"
               layout="fullWidth"
-              style={{ width: "100%", height: "100%" }}
+              objectFit="cover"
               placeholder="blurred"
             />
           </Box>
