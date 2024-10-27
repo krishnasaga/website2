@@ -16,39 +16,199 @@ import TopNav from "../Layout/TopNav";
 
 export default function HeroSection() {
   return (
-    <Box h={"100vh"}>
-      <TopNav />
-      <Grid
-        templateColumns={{ base: "1fr", md: "1fr 1fr" }}
-        gap={6}
-        alignItems="center"
-        h={"calc(100% - 50px)"}
-      >
-        <Slideshow />
+    <Box>
+      <Box h={"100vh"}>
+        <TopNav />
+        <Grid
+          templateColumns={{ base: "1fr", md: "1fr 1fr" }}
+          gap={6}
+          alignItems="center"
+          h={"calc(100% - 50px)"}
+        >
+          <Slideshow />
 
-        {/* Right Section: Content */}
-        <VStack align="flex-start" spacing={6}>
-          <Heading
-            as="h1"
-            fontSize={{ base: "2xl", md: "6xl" }}
-            fontWeight="bold"
-            p={{ base: "16x", md: "32px" }}
-          >
-            Big Impact Technology for Small Businesses
-          </Heading>
-          <Text
-            fontSize={{ base: "2xl", md: "4xl" }}
-            color="#E85816"
-            p={{ base: "16x", md: "32px" }}
-            fontWeight={"bold"}
-          >
-            Bring your authentic vision to life and let your passion drive
-            growth in a rapidly advancing technological world. Gain big-business
-            insights, streamline operations, and quickly adapt to market
-            changes.
-          </Text>
-        </VStack>
-      </Grid>
+          {/* Right Section: Content */}
+          <VStack align="flex-start" spacing={6}>
+            <Heading
+              as="h1"
+              fontSize={{ base: "2xl", md: "6xl" }}
+              fontWeight="bold"
+              p={{ base: "16x", md: "32px" }}
+            >
+              Big Impact Technology for Small Businesses
+            </Heading>
+            <Text
+              fontSize={{ base: "2xl", md: "4xl" }}
+              color="#E85816"
+              p={{ base: "16x", md: "32px" }}
+              fontWeight={"bold"}
+            >
+              Bring your authentic vision to life and let your passion drive
+              growth in a rapidly advancing technological world. Gain
+              big-business insights, streamline operations, and quickly adapt to
+              market changes.
+            </Text>
+          </VStack>
+        </Grid>
+      </Box>
+      <Box h={"100vh"}>
+        <Grid
+          templateColumns={{ base: "1fr", md: "1fr 1fr" }}
+          gap={6}
+          alignItems="center"
+          h={"calc(100% - 50px)"}
+        >
+          {/* Right Section: Content */}
+          <VStack align="flex-start" spacing={6}>
+            <Heading
+              as="h1"
+              fontSize={{ base: "2xl", md: "6xl" }}
+              fontWeight="bold"
+              p={{ base: "16x", md: "32px" }}
+            >
+              Big Impact Technology for Small Businesses
+            </Heading>
+            <Text
+              fontSize={{ base: "2xl", md: "4xl" }}
+              color="#E85816"
+              p={{ base: "16x", md: "32px" }}
+              fontWeight={"bold"}
+            >
+              Bring your authentic vision to life and let your passion drive
+              growth in a rapidly advancing technological world. Gain
+              big-business insights, streamline operations, and quickly adapt to
+              market changes.
+            </Text>
+          </VStack>
+          <Box p={"40px"}>
+            <StaticImage
+              src="../images/small-business2.jpg"
+              alt="Image 2"
+              layout="fullWidth"
+              style={{ width: "100%", height: "100%" }}
+              placeholder="blurred"
+            />
+          </Box>
+        </Grid>
+      </Box>
+      <Box h={"100vh"}>
+        <Grid
+          templateColumns={{ base: "1fr", md: "1fr 1fr" }}
+          gap={6}
+          alignItems="center"
+          h={"calc(100% - 50px)"}
+        >
+          {/* Right Section: Content */}
+          <VStack align="flex-start" spacing={6}>
+            <Heading
+              as="h1"
+              fontSize={{ base: "2xl", md: "6xl" }}
+              fontWeight="bold"
+              p={{ base: "16x", md: "32px" }}
+            >
+              Make Your Business Visible
+            </Heading>
+            <Text
+              fontSize={{ base: "2xl", md: "4xl" }}
+              color="#E85816"
+              p={{ base: "16x", md: "32px" }}
+              fontWeight={"bold"}
+            >
+              Website with smooth UI that resonates with quality of your
+              services and products
+            </Text>
+          </VStack>
+          <Box p={"40px"}>
+            <StaticImage
+              src="../images/small-business2.jpg"
+              alt="Image 2"
+              layout="fullWidth"
+              style={{ width: "100%", height: "100%" }}
+              placeholder="blurred"
+            />
+          </Box>
+        </Grid>
+      </Box>
+      <Box h={"100vh"}>
+        <Grid
+          templateColumns={{ base: "1fr", md: "1fr 1fr" }}
+          gap={6}
+          alignItems="center"
+          h={"calc(100% - 50px)"}
+        >
+          {/* Right Section: Content */}
+          <VStack align="flex-start" spacing={6}>
+            <Heading
+              as="h1"
+              fontSize={{ base: "2xl", md: "6xl" }}
+              fontWeight="bold"
+              p={{ base: "16x", md: "32px" }}
+            >
+              Big Impact Technology for Small Businesses
+            </Heading>
+            <Text
+              fontSize={{ base: "2xl", md: "4xl" }}
+              color="#E85816"
+              p={{ base: "16x", md: "32px" }}
+              fontWeight={"bold"}
+            >
+              Bring your authentic vision to life and let your passion drive
+              growth in a rapidly advancing technological world. Gain
+              big-business insights, streamline operations, and quickly adapt to
+              market changes.
+            </Text>
+          </VStack>
+          <Box p={"40px"}>
+            <StaticImage
+              src="../images/small-business2.jpg"
+              alt="Image 2"
+              layout="fullWidth"
+              style={{ width: "100%", height: "100%" }}
+              placeholder="blurred"
+            />
+          </Box>
+        </Grid>
+      </Box>
+      <Box h={"100vh"}>
+        <Grid
+          templateColumns={{ base: "1fr", md: "1fr 1fr" }}
+          gap={6}
+          alignItems="center"
+          h={"calc(100% - 50px)"}
+        >
+          {/* Right Section: Content */}
+          <VStack align="flex-start" spacing={6}>
+            <Heading
+              as="h1"
+              fontSize={{ base: "2xl", md: "6xl" }}
+              fontWeight="bold"
+              p={{ base: "16x", md: "32px" }}
+            >
+              Big Impact Technology for Small Businesses
+            </Heading>
+            <Text
+              fontSize={{ base: "2xl", md: "4xl" }}
+              color="#E85816"
+              p={{ base: "16x", md: "32px" }}
+              fontWeight={"bold"}
+            >
+              Bring your authentic vision to life and let your passion drive
+              growth in a rapidly advancing technological world. Gain
+              big-business insights, streamline operations, and quickly adapt to
+              market changes.
+            </Text>
+          </VStack>
+          <Box p={"40px"}>
+            <StaticImage
+              src="../images/small-business2.jpg"
+              alt="Image 2"
+              layout="fullWidth"
+              style={{ width: "100%", height: "100%" }}
+              placeholder="blurred"
+            />
+          </Box>
+        </Grid>
+      </Box>
     </Box>
   );
 }
@@ -64,7 +224,7 @@ const Slideshow = () => {
       layout="fullWidth"
       style={{ width: "100%", height: "100%" }}
       placeholder="blurred"
-      objectPosition={'50% 50%'}
+      objectPosition={"50% 50%"}
     />,
     <StaticImage
       src="../images/small-business2.jpg"
