@@ -25,7 +25,7 @@ export default function HeroSection() {
       >
         <Box width="100%" height="100%" position="relative">
           <StaticImage
-            src="../images/small-business.jpg"
+            src="../images/small-business2.avif"
             alt="Abstract green design"
             placeholder="blurred"
             layout="fullWidth" // Set to fullWidth to occupy 100% width
