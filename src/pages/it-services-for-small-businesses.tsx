@@ -45,15 +45,13 @@ export default function HeroSection() {
           </Heading>
           <Text
             fontSize={{ base: "2xl", md: "3xl" }}
-            color="gray.600"
+            color="#E85816"
             p={{ base: "16x", md: "32px" }}
           >
-            Transform your small business with IT services designed to drive
-            growth, agility, and resilience. Gain big-business insights,
-            streamline operations, and quickly adapt to market changes. Our
-            solutions empower you to uncover hidden opportunities, connect
-            deeper with customers, and stay competitive in an evolving digital
-            landscape.
+            Gain big-business insights, streamline operations, and quickly adapt
+            to market changes. Our solutions empower you to uncover hidden
+            opportunities, connect deeper with customers, and stay competitive
+            in an evolving digital landscape.
           </Text>
         </VStack>
       </Grid>
