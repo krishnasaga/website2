@@ -59,7 +59,7 @@ const Slideshow = () => {
   // Array of images to display in the slideshow
   const images = [
     <StaticImage
-      src="../images/small-business1.avif"
+      src="../images/small-business.jpg"
       alt="Image 1"
       layout="fullWidth"
       style={{ width: "100%", height: "100%" }}
