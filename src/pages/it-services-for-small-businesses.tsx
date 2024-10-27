@@ -80,7 +80,7 @@ export default function HeroSection() {
           </VStack>
           <Box p={"40px"}>
             <StaticImage
-              src="../images/small-business2.jpg"
+              src="../images/business-online.jpg"
               alt="Image 2"
               layout="fullWidth"
               style={{ width: "100%", height: "100%" }}
