@@ -68,7 +68,7 @@ export default function HeroSection() {
             >
               Your Business, Seen and Heard Online
             </Heading>
-            <Box p={{ base: "16x", md: "32px" }} >
+            <VStack p={{ base: "16x", md: "32px" }}>
               <Text
                 fontSize={{ base: "lg", md: "lg" }}
                 color="#E85816"
@@ -104,7 +104,7 @@ export default function HeroSection() {
                 Create an interface that reflects the high quality of the
                 client's work.
               </Text>
-            </Box>
+            </VStack>
           </VStack>
           <Box h={"70%"} borderRadius={"20px"} overflow={"hidden"} m={"32px"}>
             <StaticImage
