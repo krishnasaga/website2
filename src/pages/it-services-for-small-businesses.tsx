@@ -58,8 +58,7 @@ export default function HeroSection() {
           alignItems="center"
           h={"calc(100% - 50px)"}
         >
-          {/* Right Section: Content */}
-          <VStack align="flex-start" spacing={6} textAlign={'center'}>
+          <VStack align="flex-start" spacing={6} textAlign={'left'}>
             <Heading
               as="h1"
               fontSize={{ base: "2xl", md: "6xl" }}
