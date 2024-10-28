@@ -104,6 +104,9 @@ export default function HeroSection() {
                 Create an interface that reflects the high quality of the
                 client's work.
               </Text>
+              <Button>
+                Start Your Project
+              </Button>
             </VStack>
           </VStack>
           <Box h={"70%"} borderRadius={"20px"} overflow={"hidden"} m={"32px"}>
